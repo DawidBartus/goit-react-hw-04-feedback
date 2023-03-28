@@ -14,7 +14,6 @@ const App = () => {
   }, [good, bad, neutral]);
 
   const handleFeedback = e => {
-    console.log(e.target.name);
     e.target.name === 'good' && setGood(good + 1);
     e.target.name === 'neutral' && setNeutral(neutral + 1);
     e.target.name === 'bad' && setBad(bad + 1);
