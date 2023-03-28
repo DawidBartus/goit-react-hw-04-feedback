@@ -8,6 +8,7 @@ const App = () => {
   const [bad, setBad] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [total, setTotal] = useState(good + bad + neutral);
+  const [bgColor, setColor] = useState({ backgroundColor: '' });
 
   useEffect(() => {
     setTotal(good + bad + neutral);
@@ -20,16 +21,30 @@ const App = () => {
     e.target.name === 'bad' && setBad(bad + 1);
   };
   const positiveFeedback = () => {
-    return Math.round((good * 100) / total) + '%';
+    return Math.round((good * 100) / total);
   };
 
   const getColor = value => {
-    console.log('working');
-    if (value >= 80) {
-      const greenStyle = { backgroundColor: '#699d6c' };
+    if (value >= 85) {
+      const greenStyle = {
+        backgroundColor: '#699d6c',
+        borderRadius: '8px',
+        padding: '5px 5px',
+      };
       return greenStyle;
-    } else if (value >= 60) {
-      const greenStyle = { backgroundColor: '#9c9d69' };
+    } else if (value >= 65) {
+      const greenStyle = {
+        backgroundColor: '#9c9d69',
+        borderRadius: '8px',
+        padding: '5px 5px',
+      };
+      return greenStyle;
+    } else {
+      const greenStyle = {
+        backgroundColor: '#9d6969',
+        borderRadius: '8px',
+        padding: '5px 5px',
+      };
       return greenStyle;
     }
   };
@@ -47,11 +62,13 @@ const App = () => {
             bad={bad}
             neutral={neutral}
             total={total}
-            bgColor={getColor(total)}
-            positiveFeedback={positiveFeedback()}
+            bgColor={getColor(positiveFeedback())}
+            positiveFeedback={positiveFeedback() + '%'}
           />
         ) : (
-          <p>There is no feedback</p>
+          <p style={{ color: 'white', fontWeight: 'bold' }}>
+            There is no feedback yet.
+          </p>
         )}
       </Section>
     </>

@@ -2,7 +2,7 @@ import style from 'components/Statistics/Statistics.module.css';
 
 const Statistics = props => {
   const { good, bad, neutral, total, positiveFeedback, bgColor } = props;
-  console.log(bgColor);
+  console.log(total);
   return (
     <section className={style.statsSection}>
       <h2>Statistics</h2>
