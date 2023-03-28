@@ -1,0 +1,43 @@
+.bttnHolder {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+.listElem > button {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border-color: transparent;
+}
+
+.listElem:first-of-type > button {
+  background-color: #699d6c;
+}
+.listElem:first-of-type > button:hover {
+  outline: 1px solid #699d6c;
+  transition: 1s;
+  -webkit-box-shadow: 11px 11px 43px 7px rgba(105, 157, 108, 1);
+  -moz-box-shadow: 11px 11px 43px 7px rgba(105, 157, 108, 1);
+  box-shadow: 11px 11px 43px 7px rgba(105, 157, 108, 1);
+}
+.listElem:nth-of-type(2) > button {
+  background-color: #9c9d69;
+}
+.listElem:nth-of-type(2) > button:hover {
+  background-color: #9c9d69;
+  transition: 1s;
+  -webkit-box-shadow: 0px 0px 43px 7px rgba(156, 157, 105, 1);
+  -moz-box-shadow: 0px 0px 43px 7px rgba(156, 157, 105, 1);
+  box-shadow: 0px 0px 43px 7px rgba(156, 157, 105, 1);
+}
+.listElem:nth-of-type(3) > button {
+  background-color: #9d6969;
+}
+.listElem:nth-of-type(3) > button:hover {
+  background-color: #9d6969;
+  transition: 1s;
+  -webkit-box-shadow: -11px 11px 43px 7px rgba(157, 105, 105, 1);
+  -moz-box-shadow: -11px 11px 43px 7px rgba(157, 105, 105, 1);
+  box-shadow: -11px 11px 43px 7px rgba(157, 105, 105, 1);
+}

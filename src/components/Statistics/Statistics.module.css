@@ -1,0 +1,47 @@
+.statsSection {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d9d9d970;
+}
+.statsElements {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.statsElements span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+}
+.goodElem {
+  background-color: #699d6c;
+}
+.neutralElem {
+  background-color: #9c9d69;
+}
+.badElem {
+  background-color: #9d6969;
+}
+
+.statsElements p {
+  margin: 5px;
+}
+.positiveFeedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h3 {
+  margin: 10px 0 10px 0;
+}
+.positiveFeedback p {
+  margin: 0;
+}
+.totalElem {
+  margin: 10px;
+  display: flex;
+  gap: 10px;
+}
