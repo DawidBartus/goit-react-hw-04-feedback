@@ -8,7 +8,6 @@ const App = () => {
   const [bad, setBad] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [total, setTotal] = useState(good + bad + neutral);
-  const [bgColor, setColor] = useState({ backgroundColor: '' });
 
   useEffect(() => {
     setTotal(good + bad + neutral);
