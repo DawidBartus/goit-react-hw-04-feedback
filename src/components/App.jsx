@@ -8,7 +8,7 @@ const App = () => {
   const [bad, setBad] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [total, setTotal] = useState(good + bad + neutral);
-
+  // test
   useEffect(() => {
     setTotal(good + bad + neutral);
   }, [good, bad, neutral]);
