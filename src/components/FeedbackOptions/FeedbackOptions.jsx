@@ -1,4 +1,5 @@
 import style from 'components/FeedbackOptions/FeedbackOptions.module.css';
+import PropTypes from 'prop-types';
 
 const FeedbackOptions = props => {
   const { options, onClick } = props;
@@ -21,6 +22,11 @@ const FeedbackOptions = props => {
       })}
     </ul>
   );
+};
+
+FeedbackOptions.propTypes = {
+  options: PropTypes.array,
+  onClick: PropTypes.func,
 };
 
 export default FeedbackOptions;

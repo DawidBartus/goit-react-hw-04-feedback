@@ -1,4 +1,5 @@
 import style from 'components/Statistics/Statistics.module.css';
+import PropTypes from 'prop-types';
 
 const Statistics = props => {
   const { good, bad, neutral, total, positiveFeedback, bgColor } = props;
@@ -31,6 +32,15 @@ const Statistics = props => {
       </div>
     </section>
   );
+};
+
+Statistics.propTypes = {
+  good: PropTypes.number,
+  bad: PropTypes.number,
+  neutral: PropTypes.number,
+  total: PropTypes.number,
+  positiveFeedback: PropTypes.string,
+  bgColor: PropTypes.object,
 };
 
 export default Statistics;

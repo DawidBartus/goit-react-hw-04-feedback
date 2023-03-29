@@ -24,26 +24,26 @@ const App = () => {
 
   const getColor = value => {
     if (value >= 85) {
-      const greenStyle = {
+      const colorStyle = {
         backgroundColor: '#699d6c',
         borderRadius: '8px',
         padding: '5px 5px',
       };
-      return greenStyle;
+      return colorStyle;
     } else if (value >= 65) {
-      const greenStyle = {
+      const colorStyle = {
         backgroundColor: '#9c9d69',
         borderRadius: '8px',
         padding: '5px 5px',
       };
-      return greenStyle;
+      return colorStyle;
     } else {
-      const greenStyle = {
+      const colorStyle = {
         backgroundColor: '#9d6969',
         borderRadius: '8px',
         padding: '5px 5px',
       };
-      return greenStyle;
+      return colorStyle;
     }
   };
 
